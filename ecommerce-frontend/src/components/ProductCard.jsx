@@ -12,9 +12,7 @@ import { IMAGE_BASE_URL } from "../config";
 export default function ProductCard({ product }) {
   
   const getImageUrl = () => {
-    // DEBUG 1: Verificar o que está chegando da API para este produto
-    console.log(`[Debug] Processando imagem de: ${product.name}`);
-    console.log(`[Debug] image_url original do BD:`, product.image_url);
+
 
     if (!product.image_url) {
       console.warn(`[Debug] Produto ${product.id} está sem URL de imagem.`);
@@ -35,8 +33,7 @@ export default function ProductCard({ product }) {
 
     const finalUrl = `${baseUrl}${path}`;
     
-    // DEBUG 2: Ver a URL final montada
-    console.log(`[Debug] URL Final Montada:`, finalUrl);
+
     
     return finalUrl;
   };

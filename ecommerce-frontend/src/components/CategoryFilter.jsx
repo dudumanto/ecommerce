@@ -11,7 +11,6 @@ export default function CategoryFilter({ value, onChange }) {
       setLoading(true);
       try {
         const res = await api.get('/categories');
-        // Acessando res.data.data conforme o padrão do seu Laravel Resource
         setCategories(res.data.data);
       } catch (err) {
         console.error("Erro ao carregar categorias no filtro:", err);
@@ -27,12 +26,12 @@ export default function CategoryFilter({ value, onChange }) {
       <InputLabel id="category-select-label">Filtrar por Categoria</InputLabel>
       <Select
         labelId="category-select-label"
-        // Garante que o MUI sempre tenha uma string para não dar erro de "uncontrolled component"
+    
         value={value || ''}
         label="Filtrar por Categoria"
         onChange={(e) => onChange(e.target.value || null)}
         disabled={loading}
-        // Ícone de carregamento discreto dentro do select
+
         endAdornment={
           loading ? (
             <InputAdornment position="end" sx={{ mr: 3 }}>
