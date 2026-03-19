@@ -59,7 +59,7 @@ Siga os passos abaixo para rodar o projeto localmente usando o Docker Compose.
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/projeto-ecommerce.git](https://github.com/dudumanto/projeto-ecommerce.git)
+git clone ([https://github.com/dudumanto/projeto-ecommerce.git](https://github.com/dudumanto/ecommerce))
 cd projeto-ecommerce
 
 **2. Entre na pasta do projeto**
